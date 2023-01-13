@@ -5,7 +5,7 @@ body {
 .logo_heading {
   font-size: 50px;
   background-image: linear-gradient(to top, #800202, #3c2043);
-  background-clip: text;
+-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .logo {
