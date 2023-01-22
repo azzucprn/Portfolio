@@ -1,0 +1,369 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  font-family: sans-serif;
+}
+.flex-container {
+  display: flex;
+}
+/* ------------Header----------- */
+header {
+  background: linear-gradient(to right, #fbf6e7, #ffffff);
+}
+.left-header {
+  flex: 50%;
+}
+.right-header {
+  flex: 50%;
+  text-align: right;
+}
+header ul li {
+  display: inline;
+  margin-right: 40px;
+}
+.icon-style {
+  font-size: 22px;
+  color: #267871;
+  transition: 1s color;
+}
+.icon-style:hover {
+  color: #ff0084;
+}
+
+/* ---------------Nav--------------- */
+.left-nav {
+  flex: 30%;
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+}
+.right-nav {
+  flex: 70%;
+  background: linear-gradient(to left, #1f4037, #99f2c8);
+  text-align: right;
+}
+.right-nav ul {
+  list-style: none;
+}
+.right-nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+.right-nav ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 1s all;
+}
+.right-nav ul li a:hover {
+  color: #ff0084;
+  transform: scale(1.2);
+}
+.left-nav h1 {
+  margin: 0;
+  padding-top: 10px;
+  margin-left: 60px;
+  color: #f1f1f1;
+}
+/* ------------section display---------------- */
+section {
+  margin: 30px 0 30px 0;
+}
+.item {
+  flex: 30%;
+  margin: 0 30px 0 30px;
+}
+.box {
+  height: 400px;
+  width: 300px;
+  background: linear-gradient(to right, #96ada3, #f2f2f2, #dbdbdb, #eaeaea);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+section p,
+section h1 {
+  margin: 5px 0 0 0;
+}
+
+section .box button {
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(to right, #136a8a, #267871);
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  /* overflow: hidden; */
+  /* transition: 0.5s linear; */
+}
+.heading {
+  text-align: center;
+  color: #f1f1f1;
+  font-family: BIZ UDGothic;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+/* section .box button:hover {
+  transform: scale(1.1);
+  color: #f1f1f1;
+} */
+
+.btn:hover {
+  animation: myAnim 1.4s ease 0s 1 normal forwards;
+
+  /* animation: myAnim 2s ease 0s 1 normal forwards; */
+}
+/* @keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+/* -------------Footer------------ */
+footer {
+  margin-top: 80px;
+}
+.footer-heading {
+  display: flex;
+  height: 200px;
+  background: linear-gradient(to top, #c0d1c9, #f2f2f2, #dbdbdb, #eaeaea);
+}
+.footer-heading-left {
+  flex: 50%;
+  font-family: papyrus;
+  font-size: 30px;
+  font-weight: 500;
+}
+.footer-heading-left h2 {
+  margin: 70px 0 0 40px;
+  color: #267871;
+}
+.footer-heading-right {
+  margin-top: 25px;
+  flex: 50%;
+}
+.footer-social-media {
+  display: inline-block;
+  margin: 30px 20px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.footer-social-media a {
+  text-decoration: none;
+}
+.footer-social-media i {
+  line-height: 80px;
+  font-size: 26px;
+  transition: 0.2s linear;
+  color: #267871;
+}
+
+.footer-social-media:hover i {
+  transform: scale(1.3);
+  color: #21322f;
+}
+
+.footer-social-media:hover {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 0;
+  }
+
+  10% {
+    transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+
+  height: 400px;
+  background: linear-gradient(to bottom, #0f2027, #122830, #1c3946);
+}
+.footer-box {
+  height: 350px;
+  width: 20%;
+  margin-top: 50px;
+  text-align: center;
+  color: #eaeaea;
+  font-family: KaiTi;
+  text-transform: capitalize;
+}
+.footer-box a {
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  margin: 10px;
+}
+.copy-right {
+  text-align: center;
+  color: #041c28;
+}
+.footer-box hr {
+  width: 60%;
+  margin-top: 40px;
+}
+/* ----------Media Query------------- */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .flex-container {
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+  header {
+    display: none;
+  }
+  .item {
+    margin-top: 10px;
+  }
+  .box {
+    width: 100%;
+  }
+  .box h1 {
+    font-size: 15px;
+    margin: 10px;
+  }
+  .box p {
+    font-size: 12px;
+  }
+  .right-nav {
+    text-align: center;
+  }
+  .right-nav ul li {
+    margin: 5px;
+  }
+  .right-nav ul li a {
+    font-size: 13px;
+  }
+  .footer-heading {
+    flex-direction: column;
+  }
+  .footer-heading-left {
+    font-size: 20px;
+  }
+  .footer-heading-left h2 {
+    margin-top: 30px;
+  }
+  .footer-heading-right {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer-social-media {
+    width: 40px;
+    height: 40px;
+    margin: 15px 10px;
+  }
+  .footer-social-media i {
+    line-height: 40px;
+    font-size: 15px;
+  }
+  .footer-links h3 {
+    font-size: 10px;
+  }
+  .footer-box a {
+    font-size: 8px;
+  }
+  .footer-box hr {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  .item {
+    margin-top: 10px;
+  }
+  .right-nav ul li a {
+    font-size: 16px;
+  }
+  .footer-heading-left {
+    font-size: 25px;
+  }
+  .footer-social-media {
+    width: 60px;
+    height: 60px;
+    margin: 30px 10px;
+  }
+  .footer-social-media i {
+    line-height: 60px;
+    font-size: 25px;
+  }
+  .footer-links h3 {
+    font-size: 15px;
+  }
+  .footer-box a {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 769px) and(max-width:1024px) {
+}

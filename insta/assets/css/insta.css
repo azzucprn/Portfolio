@@ -1,0 +1,85 @@
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+.profile_pic {
+  height: 150px;
+  width: 150px;
+  border: 7px solid #580370;
+  border-radius: 50%;
+  margin-right: 50px;
+
+  background-image: url(../img/profile.jpeg);
+  background-position: center;
+  background-size: cover;
+
+  /* float: left; */
+}
+.button {
+  padding: 5px;
+  border-radius: 10%;
+  margin: 7px;
+  width: 100px;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+.button_follow {
+  background-color: #02365e;
+  color: #fff;
+}
+.button_message {
+  background-color: #fff;
+  color: #000;
+}
+.status {
+  height: 100px;
+  width: 100px;
+  border: 7px solid #036e70;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+
+  background-position: center;
+  background-size: cover;
+}
+.status_1 {
+  background-image: url(../img/status1.gif);
+}
+.status_2 {
+  background-image: url(../img/status2.gif);
+}
+.status_3 {
+  background-image: url(../img/status3.gif);
+}
+.status_4 {
+  background-image: url(../img/status4.gif);
+}
+.status_5 {
+  background-image: url(../img/status5.gif);
+}
+.heading_post {
+  border-top: 1px solid #fff;
+  width: 10%;
+}
+.user_posts img {
+  width: 350px;
+  height: 400px;
+  margin-left: 40px;
+  border: 1px solid #fff;
+}
+
+.float_right {
+  float: right;
+}
+.float_left {
+  float: left;
+}
+.margin {
+  margin-right: 20px;
+}
